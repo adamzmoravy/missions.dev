@@ -13,7 +13,7 @@ This codebase is still missing guides and installation instructions, and tests n
 
 Where the API lives. Written in PHP, loosely uses Silex a light framework.
 
-#### /vue3
+#### /frontend
 
 The front end, based on Vue3.
 
