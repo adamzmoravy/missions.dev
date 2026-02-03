@@ -1,7 +1,7 @@
 Idea village API
 ========
 ## Note
-The following setup guide and the whole documentation and the setup process is still very rudimentary.
+The following setup guide and the whole documentation and the setup process is still very rudimentary and needs to be revised.
 
 ## Environmental variables
 
