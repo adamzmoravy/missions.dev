@@ -1,0 +1,85 @@
+
+.profile-top {
+    display:grid;
+}
+@media (max-width: 576px) {
+    .profile-top {
+        display:block;
+    }
+    
+}
+.profile-image {
+    border-radius: 50%;
+}
+.profile-image-container {
+    background:url("/img/profile-background-pink.svg");
+    background-size:cover;
+    display:inline-block;
+    padding:15px;
+}
+.profile-image-container-preview {
+    background:url("/img/profile-background-pink.svg");
+    background-size:cover;
+    display:inline-block;
+    padding:10px;
+}
+.profile-image-container-preview-small {
+    background:url("/img/profile-background-pink.svg");
+    background-size:cover;
+    display:inline-block;
+    padding:2px;
+}
+
+.profile-image-preview-container {
+    background:url("/img/profile-background-pink.svg");
+    display:inline-block;
+}
+.profile-image-preview-container-index {
+    background:url("/img/profile-background-pink.svg");
+    display:inline-block;
+    padding:10px;
+
+}
+.profile-image-preview {
+    padding:5px;
+    width:76px;
+    height:76px;
+}
+
+.profile-image-index {
+    padding:5px;
+    width:120px;
+    height:120px;
+}
+
+
+.profile-image-preview-small {
+    padding:2px;
+    width:50px;
+    height:50px;
+}
+
+.profile-image-dropdown {
+    width: 35px;
+    height: 35px;
+    margin-right: 0.4em;
+}
+
+.profile-image-container-responsive {
+    width:100%;
+    background:url("/img/profile-background-pink.svg");
+    background-size:cover;
+    display:inline-block;
+    padding:5%;
+    line-height:1!important;
+
+}
+
+.profile-image-container-responsive a {
+    line-height:1;
+}
+.profile-image-responsive {
+    border-radius: 50%;
+    width:100%;
+    height:100%;
+}

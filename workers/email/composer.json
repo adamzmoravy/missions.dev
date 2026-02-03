@@ -1,0 +1,24 @@
+{
+    "name": "missions-worker/project",
+    "description": "Workers for Missions.dev",
+    "type": "project",
+    "require": {
+        "aws/aws-sdk-php": "^3.343",
+        "vlucas/phpdotenv": "^5.6",
+        "monolog/monolog": "^3.9",
+        "phpmailer/phpmailer": "^6.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "MissionsWorker\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arnar Sigurðsson",
+            "email": "hello@eastofmoon.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "license": "Copyright (c) 2025 Austan mána ehf"
+}

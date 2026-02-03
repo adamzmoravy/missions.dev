@@ -1,0 +1,17 @@
+{
+    "platform": {
+        "groups": {
+            "default": null
+        },
+        "platform_meta_defenitions": {
+            "default": {}
+        },
+        "footer_line": "",
+        "site_languages": {
+            "codes": [
+                "en",
+                "is"
+            ]
+        }
+    }
+}

@@ -1,0 +1,124 @@
+{
+    "platform":  {
+        "ui": {
+            "iconFiles": {
+                "events": {
+                    "normal": "/img/haus/liam/events.png",
+                    "active": "/img/haus/liam/events-active.png",
+                    "scale": "1.3"
+
+                },
+                "portfolio": {
+                    "normal": "/img/haus/liam/portfolio.png",
+                    "active": "/img/haus/liam/portfolio-active.png",
+                    "scale": "1.1"
+                },
+                "home": {
+                    "normal": "/img/haus/liam/home.png",
+                    "active": "/img/haus/liam/home-active.png"
+                },
+                "submissions": {
+                    "normal": "/img/hex-outline-multi.svg",
+                    "active": "/img/hex-outline-multi.svg",
+                    "scale": "1"
+                },
+                "talk": {
+                    "normal": "/img/haus/liam/talk.png",
+                    "active": "/img/haus/liam/talk-active.png"
+                },
+                "bulp": {
+                    "normal": "/img/haus/liam/lightbulb.png",
+                    "active": "/img/haus/liam/lightbulb-active.png",
+                    "scale": "1.2"
+                },
+                "book": {
+                    "normal": "/img/haus/liam/book.png",
+                    "active": "/img/haus/liam/book-active.png"
+                },
+                "join": {
+                    "normal": "/img/haus/liam/join.png",
+                    "active": "/img/haus/liam/join-active.png"
+                },
+                "issues": {
+                    "normal": "/img/haus/liam/puzzle.png",
+                    "active": "/img/haus/liam/puzzle-active.png"
+                },
+                "people": {
+                    "normal": "/img/group-outline-thinner.svg",
+                    "active": "/img/group-outline-thinner.svg"
+                },
+                "members": {
+                    "normal": "/img/haus/liam/members.png",
+                    "active": "/img/haus/liam/members-active.png"
+                },
+                "guide": {
+                    "normal": "/img/haus/liam/guide.png",
+                    "active": "/img/haus/liam/guide-active.png"
+                },
+                "stage-challenge": {
+                    "normal": "/img/stage-0-icon.svg"
+                },
+                "stage-idea": {
+                    "normal": "/img/stage-1-icon.svg",
+                    "top": -0.1
+                },
+                "stage-project": {
+                    "normal": "/img/stage-2-icon.svg",
+                    "top": 0.1
+                },
+                "stage-insight": {
+                    "normal": "/img/stage-insight.svg"
+                },
+                "stage-topic": {
+                    "normal": "/img/haus/liam/puzzle-active.png"
+                },
+                "stage-issue": {
+                    "normal": "/img/haus/liam/puzzle-active.png",
+                    "scale": "1.3"
+                },
+                "stage-guide": {
+                    "normal": "/img/haus/liam/guide-active.png",
+                    "scale": "1.2"
+                },
+                "stage-organisation": {
+                    "normal": "/img/haus/liam/portfolio-active.png",
+                    "scale": "1.1"
+                },
+                "stage-default": {
+                    "normal": "/img/add-icon.svg"
+                },
+                "stage-portfolio_item": {
+                    "normal": "/img/haus/liam/portfolio-active.png",
+                    "active": "/img/haus/liam/portfolio-active.png",
+                    "scale": "1"
+                },
+                "lena_home": {
+                    "normal": "/img/lena/Home_Default.svg",
+                    "active": "/img/lena/Home_Active.svg"
+                },
+                "lena_community": {
+                    "normal": "/img/lena/Community_Default.svg",
+                    "active": "/img/lena/Community_Active.svg"
+                },
+                "lena_orgs": {
+                    "normal": "/img/lena/Orgs_Default.svg",
+                    "active": "/img/lena/Orgs_Active.svg"
+                },
+                "lena_q&a": {
+                    "normal": "/img/lena/Q&A_Default.svg",
+                    "active": "/img/lena/Q&A_Active.svg"
+                },
+                "lena_resources": {
+                    "normal": "/img/lena/Resources_Default.svg",
+                    "active": "/img/lena/Resources_Active.svg"
+                },
+                "lena_roadmap": {
+                    "normal": "/img/lena/Roadmap_Default.svg",
+                    "active": "/img/lena/Roadmap_Active.svg"
+                }
+            }
+        }
+    }
+
+}
+  

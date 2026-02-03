@@ -1,0 +1,30 @@
+{
+    "user_id": {
+        "type": "number",
+        "required": true,
+        "label": "ID",
+        "description": "The unique identifier of the user",
+        "editable": false
+    },
+    "first_name": {
+        "type": "string",
+        "required": true,
+        "label": "First Name",
+        "description": "The first name of the user",
+        "editable": false
+    },
+    "last_name": {
+        "type": "string",
+        "required": true,
+        "label": "Last Name",
+        "description": "The last name of the user",
+        "editable": false
+    },
+    "email": {
+        "type": "string",
+        "required": true,
+        "label": "Email",
+        "description": "The email address of the user",
+        "editable": false
+    }
+}

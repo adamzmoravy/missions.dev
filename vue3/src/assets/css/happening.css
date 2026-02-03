@@ -1,0 +1,11 @@
+.happening-head {
+    display:grid;grid-auto-columns:auto 350px;grid-auto-flow: column;
+}
+
+@media (max-width: 800px) {
+
+    .happening-head {
+        display:block;
+    }
+    
+}

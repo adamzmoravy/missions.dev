@@ -1,0 +1,25 @@
+
+            <a href="{{ base_url }}/submission/{{ preview.experiment_id }}/" style="width:100%;display:inline-block;color:black;text-decoration: none;">
+                <div style="
+                    width:100%;
+                    margin-top:15px;
+                    background-color:white;
+                    position:relative;
+                    border-style:solid;
+                    border-width:1px;
+                    padding:0px;
+                    border-color:lightgrey;
+                    border-radius:6px;
+
+                    ">
+                    <div style="padding:15px">
+
+                    <h2 style="margin-top:5px;">{{ preview.title }}</h2>
+                    {% if preview.image != ""  %}
+                        <img src="https://d34m5sods6fnic.cloudfront.net/image/fetch/c_thumb,h_600,w_1000,e_pixelate:0/{{ preview.image }}" width="420px" style="width:420px;">
+                    {% endif %}
+
+                    <p>{{ preview.short_description }}</p>
+                    </div>
+                </div>
+            </a>

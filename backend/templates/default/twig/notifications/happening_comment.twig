@@ -1,0 +1,51 @@
+{% extends "notifications/base_email.twig" %}
+{% block content %}
+
+    <h2 style="font-size:1.5em;">New announcement on: <br>
+        <a href="{{ base_url }}/group/{{ happening_id }}/">{{topic_title}}</a>
+    </h2>
+    {% if subject %}
+        <h1 style="font-size:2em;">{{ subject }}</h1>
+    {% endif %}
+
+    {% if image %}
+
+            <img alt="Image from post" src="https://d34m5sods6fnic.cloudfront.net/image/fetch/c_thumb,w_900/{{image}}" width="450" style="width:100%;margin: 0; border: 0; padding: 0; display: block;">
+
+        {% if images_num > 1 %}
+            <a href="{{ base_url }}/group/{{ happening_id }}/" style="font-size:1em;">See {{ images_num - 1 }} more images</a>
+        {% endif %}
+
+        <br><br>
+
+
+    {% endif %}
+
+
+
+    <a href="{{ base_url }}/en/profile/{{ commenter.user_id }}/">
+        <img src="https://d34m5sods6fnic.cloudfront.net/image/fetch/c_thumb,h_400,w_400,r_max,e_pixelate:0/{{ commenter.image }}"
+             style="border-radius:30px;padding: 5px;width: 100px;height: 100px;float:right;">
+    </a>
+
+    {% if type == 'red' %} <h3 style="color:rgb(255, 102, 102);">Feeling</h3> {% endif %}
+    {% if type == 'black' %} <h3 style="color:black;">Critical</h3> {% endif %}
+    {% if type == 'white' %} <h3 style="color:lightgrey;">Information</h3> {% endif %}
+    {% if type == 'blue' %} <h3 style="color:rgb(102, 102, 204);">Planning</h3> {% endif %}
+    {% if type == 'yellow' %} <h3 style="color:rgb(255, 204, 102);">Positive</h3> {% endif %}
+    {% if type == 'green' %} <h3 style="color:rgb(102, 204, 153);">New ides</h3> {% endif %}
+    <h3>From {{ commenter.name }}</h3>
+
+    <p style="font-size:15px;">{{body|raw}}</p>
+    <p><a href="{{ base_url }}/group/{{ happening_id }}/" style="font-size:1.5em;">Reply to this announcement</a></p>
+
+    {% if submissions %}
+
+        {% for preview in submissions %}
+            {% include "/notifications/submission.twig" %}
+        {% endfor %}        
+
+    {% endif %}
+
+
+{% endblock %}

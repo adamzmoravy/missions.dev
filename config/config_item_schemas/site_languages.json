@@ -1,0 +1,16 @@
+{
+  "title": "Site languages",
+  "type": "object",
+  "properties": {
+      "codes": {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 2,  
+          "items": {
+              "type": "string",
+              "enum": ["en", "is"]
+          }
+      }
+  }
+}

@@ -1,0 +1,346 @@
+.x-small {
+    font-size:0.5rem !important;
+}
+.small {
+    font-size:0.8rem !important;
+    line-height:1.2;
+}
+
+.small-2 {
+    font-size:0.9rem !important;
+    line-height:1.5;    
+}
+
+.medium {
+    font-size:1rem !important;
+}
+
+.medium-2 {
+    font-size:1.2rem !important;
+}
+
+
+.large {
+    font-size:1.5rem !important;
+    line-height:1.4 !important;
+}
+
+.large-2 {
+    font-size:2em !important;
+}
+
+.x-large {
+    font-size:2.8rem !important;
+
+}
+.xx-large {
+    font-size:4rem !important;
+
+}
+
+.xxx-large {
+    font-size:5em !important;
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+    .medium {
+        font-size:1rem;
+    }
+
+    .large {
+        font-size:1.2rem;
+    }
+
+    .x-large {
+        font-size:2rem!important;
+
+    }
+    .xx-large {
+        font-size:1.8rem;
+
+    }
+
+    .xxx-large {
+        font-size:2.2em;
+    }
+
+}
+
+.error-message {
+    color:red;
+}
+
+.marker {
+    font-family:permanent-marker, sans-serif;
+}
+
+.capitalize {
+    text-transform:capitalize;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+p {
+    font-size:15px!important;
+}
+
+h1 {
+
+    font-weight:100!important;
+}
+h2 {
+
+    font-weight:100!important;
+}
+
+.further-info {
+    font-size:25px;
+    margin-left:-40px;
+    font-family:permanent-marker, sans-serif;
+}
+
+.user-edited p {
+    margin-bottom:1rem!important;
+}
+
+.user-edited h1 {
+    font-family: soleil, sans-serif!important;
+    font-weight: 600!important;
+    font-style: normal!important;
+    font-size:25px!important;
+    margin-bottom: .5rem!important;
+    line-height:1.2!important;
+}
+
+.user-edited h3 {
+    font-family: soleil, sans-serif!important;
+    font-weight: 400!important;
+    font-style: normal!important;
+    font-size:15px!important;
+    margin-bottom: .5rem!important;
+    line-height:1.5;
+}
+
+.user-edited h2 {
+    font-family: soleil, sans-serif!important;
+    font-weight: 400!important;
+    font-style: normal!important;
+    font-size:20px!important;
+    margin-bottom: .5rem!important;
+    line-height:1.5;
+}
+
+h1 {
+    font-family: soleil, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size:25px;
+}
+
+.browse-heading {
+    font-size:45px;
+}
+
+
+h3 {
+    font-family: soleil, sans-serif;
+    font-size:15px;
+    font-weight: 400;
+    line-height:1.25;
+    font-style: normal;
+}
+
+.preview-headline-browse {
+    margin-top:10px;
+    font-size:20px;
+    color:#4c4c4c;
+}
+
+.preview-headline-browse:hover {
+    text-decoration:none!important;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+    h1 {
+        font-size:25px;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+
+    h1 {
+        font-size:35px;
+    }
+
+    h3 {
+        font-size:17px;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    h1 {
+        font-size:65px;
+    }
+
+    .preview-headline-browse {
+        margin-top:10px;
+        font-size:20px;
+    }
+
+    h3 {
+        font-size:20px;
+    }
+
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    h1 {
+        font-size:75px;
+    }
+
+    .browse-heading {
+        font-size:75px;
+    }
+
+    .preview-headline-browse {
+        margin-top:10px;
+        font-size:25px;
+    }
+
+
+    h3 {
+        font-size:24px;
+    }
+}
+
+.short-description {
+    font-family: soleil, sans-serif;
+    font-weight: 300;
+    color:#4c4c4c;
+
+}
+.profile-header {
+    font-size:50px;
+}
+.profile h2 {
+    font-size:20px;
+}
+
+
+.community-heading {
+/*    background-image: url('/img/highlighter-yellow.svg');*/
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom:10px;
+    padding-left:20px;
+    padding-right:20px;
+    /*transform: rotate(356deg);*/
+    letter-spacing: 0.83px;
+    font-size:32px;
+    vertical-align: middle;
+    display:inline-block;
+    /*font-family: permanent-marker, sans-serif;*/
+    font-weight: 800!important;
+
+    margin-bottom:0em;
+
+}
+
+@media (max-width: 1070px) {
+    .community-heading {
+        font-size:20px;
+        padding-left:10px;
+        padding-right:10px;
+        background-size: 100%;
+
+    }
+
+}
+
+.preview-headline {
+    margin-top:30px;
+    margin-left:70px;
+    font-size:35px;
+}
+.preview-text {
+    margin-top:20px;
+    margin-left:70px;
+    font-size:15px;
+    margin-right:30px;
+}
+
+.preview-text-browse {
+    margin-top:10px;
+    font-size:15px;
+    margin-right:30px;
+}
+
+
+.stage-selection h2 {
+    font-family: permanent-marker, sans-serif;
+    font-size:21px;
+    margin-right:10px;
+}
+
+
+
+@media (min-width: 720px){
+    .stage-selection h2 {
+        margin-right:30px;
+    }
+}
+
+.preview-text-browse {
+    color:#4c4c4c;
+}
+.preview-text-browse:hover {
+    text-decoration:none!important;
+}
+
+
+@media screen and (min-width: 1100px) {
+    .further-info {
+        font-size:35px;
+
+    }
+}
+
+.content-description-paragraph {
+    font-size:20px;
+}
+
+.question-heading {
+    font-size:1.3em;
+    font-weight:bold;
+}
+.question-answer {
+    font-size:1.1em;
+    margin-left:1em;
+}
+
+.logout-text:hover {
+    text-decoration: underline !important;
+}
+
+.activity-doc {
+    margin-left: 6px;
+}
+
+.bolder {
+    font-weight: bolder !important;
+}

@@ -1,0 +1,17 @@
+{% extends "notifications/base_email.twig" %}
+{% block content %}
+
+{% set submission_stage_handle = ui.stageHandles[submission.stage] %}
+<h4><a href="{{ base_url }}/profile/{{user_who_shares.user_id}}/">{{user_who_shares.name}}</a> shared this <strong>{{ submission_stage_handle }}</strong> with you on {{ site_title }}: <a href="{{ base_url }}/submission/{{ submission.experiment_id }}">{{ submission.title }}</a>, with this message:</h4>
+
+
+<div style="border: 1px solid #ddd; border-radius: 4px; padding: 12px;">
+
+{{ message }}
+
+
+</div>
+
+{% include 'notifications/newsletter_preview.twig' with { preview: submission, base_url: base_url } %}
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "notifications/base_email.twig" %}
+{% block content %}
+
+
+    <h2 style="font-size:25px;"><span style="font-size:60%;">You have a reply on:</span> <br>
+        <a href="{{ base_url }}/experiment/{{ experiment_id }}/">{{topic_title}}</a>
+    </h2>
+    <a href="{{ base_url }}/en/profile/{{ commenter.user_id }}/">
+        <img src="https://d34m5sods6fnic.cloudfront.net/image/fetch/c_thumb,h_400,w_400,r_max,e_pixelate:0/{{ commenter.image }}"
+             style="border-radius:30px;padding: 5px;width: 100px;height: 100px;float:right;">
+    </a>
+
+
+    <h3>From {{ commenter.name }}</h3>
+    <p style="font-size:15px;">{{body|raw}}</p>
+    <br>
+    <hr>
+
+    <h3>In reply to original comment by {{ original_commenter.name }}:</h3>
+    <p style="font-size:15px;">{{original_body|raw}}</p>
+
+    <p><a href="{{ base_url }}/experiment/{{ experiment_id }}/" style="font-size:1.5em;">Continue the conversation</a></p>
+
+
+{% endblock %}

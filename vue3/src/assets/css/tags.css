@@ -1,0 +1,99 @@
+
+.tag {
+    font-size:85%;
+    border-radius:14px;
+    padding-left:8px;
+    padding-right:8px;
+    padding-top:3px;
+    padding-bottom:3px;
+    display:inline-block;
+    margin-right:6px;
+    margin-top:3px;
+    margin-bottom:3px;
+    cursor:pointer;
+    border-color:#4c4c4c;
+    border-width:1px;
+    border-style:solid;
+    font-weight:200;
+    color:#4c4c4c;
+    background-color:white;
+}
+
+.small-tag .tag {
+    font-size:75%;
+
+}
+
+.big-tag .tag {
+    font-size:100%;
+    border-radius:18px;
+    padding-left:12px;
+    padding-right:12px;
+    padding-top:5px;
+    padding-bottom:5px;
+
+}
+
+
+.x-big-tag .tag {
+    font-size:180%;
+    margin-left:8px;
+    margin-right:8px;
+    border-radius:28px;
+    padding-left:22px;
+    padding-right:22px;
+    padding-top:5px;
+    padding-bottom:5px;
+
+}
+
+.selected_tag {
+    background-color: rgba(18, 18, 18, 0.76);
+    color:white;
+    border-color:black;
+    border-width:1px;
+    border-style:solid;
+}
+
+
+.tag-accented {
+    border-color: rgba(0, 0, 0, 0);
+    border-width:1px;
+    border-style:solid;
+}
+
+.skill-tag {
+    background:url("/img/highlight-green.svg") no-repeat;
+    background-position-y: center;
+    background-position-x: left;
+    background-size: auto;
+    padding-right:10px;
+    padding-left:20px;
+    margin-left:-5px;
+    height:30px;
+    display:inline-block;
+    font-size:18px;
+    margin-right:10px;
+}
+
+.active-tag {
+    background-color:#73BF98;
+    color:black;
+}
+
+.inactive-tag {
+    background-color: #F7BCB6;
+    color:black;
+}
+
+.inactive-tag:hover {
+    background-color: #F7BCB6 !important;
+    color:black !important;
+}
+
+
+.more-tags-dropdown {
+    margin-top: 320px;
+    background: rgba(219, 219, 219, 0.5);
+    padding: 1em;
+}

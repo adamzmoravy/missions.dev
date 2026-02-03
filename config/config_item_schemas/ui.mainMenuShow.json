@@ -1,0 +1,22 @@
+{
+    "title": "Main menu show",
+    "type": "array",
+    "uniqueItems": true,
+    "minItems": 0,
+    "maxItems": 20,
+    "items": {
+        "type": "string",
+        "enum": [
+            "talk",
+            "feed", 
+            "ideation",
+            "book",
+            "join",
+            "issues",
+            "members",
+            "events",
+            "guide",
+            "organisations"
+        ]
+    }
+}

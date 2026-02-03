@@ -1,0 +1,48 @@
+
+.heart-button {
+    cursor:pointer;
+    height:3.5em;
+    margin-top:0.5em;
+    margin-bottom:0em;
+}
+
+.like {
+    cursor:pointer;
+    margin-top:15px;
+}
+
+.user-preview-link {
+    color:#4c4c4c;
+}
+
+
+.second {
+    font-family:permanent-marker, sans-serif;
+    font-size:22px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    min-width: 119px;
+    height: 63px;
+    margin-bottom:-3px;
+}
+
+.affirmative {
+    background-image:url('/img/buttons/button-round-green.svg');
+}
+
+.proceed {
+    background-image:url('/img/buttons/button-round-yellow.svg');
+}
+
+
+.cancel {
+    background-image:url('/img/buttons/button-round-pink.svg');
+}
+
+.clickable-container {
+    cursor:pointer;
+}
+
+.clickable-container:hover a {
+    text-decoration: underline;
+}

@@ -1,0 +1,11 @@
+{% extends "notifications/base_email.twig" %}
+    {% block content %}
+    <h2>Application to: {{happening_name}}</h2>
+    <h3>By {{ user_name }}</h3>
+    <h3>Questions:</h3>
+    {% for info in questions %}
+        <strong>{{ info.q|e }}</strong><br>
+        {{ info.a|e }}
+        <br><br>
+    {% endfor %}
+{% endblock %}

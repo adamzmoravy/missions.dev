@@ -1,0 +1,161 @@
+
+.hat {
+    -webkit-mask: url(/img/hat.svg) no-repeat center;
+    /*    mask: url(img/hat.svg) no-repeat center;*/
+    background-size: contain;
+}
+
+
+.hats p {
+    font-size:90%;
+    margin-top:3px;
+
+}
+
+.small-hat {
+    background-color: #3b3b3b; width:14px;height:14px;display:inline-block;
+    top:2px;left:2px;position:relative;
+}
+.medium-hat {
+    background-color: rgba(59, 59, 59, 0.53); width:22px;height:22px;position:relative;
+    top:4px;
+    display:inline-block;
+}
+
+
+.engagement-counter {
+    font-size:70%;
+    opacity:0.7;
+}
+
+
+.comments .comment-container {
+    background-color:white;
+
+}
+
+.feed-comments .comment-container{
+    
+    background-color:#f0f2f5;
+}
+
+#readmore {
+    color:#4c4c4c;
+    font-size:90%;
+    font-weight:bold;
+}
+
+.comment-name {
+    font-size:110%;
+}
+
+.color-explainer {
+    position:relative;
+    margin-bottom:0px;
+    font-weight: bold;
+}
+
+.hat-selection {
+
+    margin-left:0.4em;
+    margin-right:0.4em;
+    min-height:3em;
+    cursor:pointer;
+}
+
+@media (max-width: 414px) {
+    .hat-selection {
+        flex: 1 1 0;
+        margin-bottom: 0.4rem;
+    }
+}
+
+.hat-selection:hover {
+
+}
+
+
+.green  {
+    border-color:#66cc99;
+    color:#66cc99;
+}
+.green-hat-bg  {
+    background-color:#66cc99;
+}
+.green:focus  {
+    border-color:#66cc99;
+
+}
+.black  {
+    border-color:black;
+    color:black;
+}
+.black-hat-bg  {
+    background-color:black;
+}
+.black:focus  {
+}
+.white  {
+    border-color:lightgrey;
+    color:rgb(136, 136, 136);
+}
+.white-hat-bg  {
+    background-color:lightgrey;
+}
+.white:focus  {
+    border-color:lightgrey;
+    box-shadow:0 0 black;
+}
+.red  {
+    border-color:#ff6666;
+    color:#ff6666;
+}
+.red-hat-bg  {
+    background-color:#ff6666;
+}
+.red:focus  {
+    border-color:#ff6666;
+    box-shadow:0 0 black;
+
+}
+.blue  {
+    border-color:#6666cc;
+    color:#6666cc;
+}
+.blue-hat-bg  {
+    background-color:#6666cc;
+}
+.blue:focus  {
+    border-color:#6666cc;
+    box-shadow:0 0 black;
+}
+
+.yellow  {
+    border-color:#ffcc66;
+    color:#ffcc66;
+}
+.yellow-hat-bg  {
+    background-color:#ffcc66;
+}
+.yellow:focus  {
+    border-color:#ffcc66;
+    box-shadow:0 0 black;
+
+}
+
+
+
+.comment-textarea {
+    border-style:solid;
+    border-width:3px;
+    box-shadow:0 0 black;
+}
+
+.whitespace-pre.comment-text.bg-white {
+}
+
+@media (max-width:414px) {
+    .whitespace-pre.comment-text.bg-white {
+        max-width: 100%;
+    }
+}

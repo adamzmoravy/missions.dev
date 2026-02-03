@@ -1,0 +1,9 @@
+<h2>Registration to: {{happening_name}}</h2>
+<p>New registration to a group.</p>
+<h3>Registration by {{ user_name }}</h3>
+<h3>Questions:</h3>
+{% for info in questions %}
+    {{ info.q|e }}<br>
+    {{ info.a|e }}
+    <br><br>
+{% endfor %}

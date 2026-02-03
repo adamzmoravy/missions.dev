@@ -1,0 +1,8 @@
+{% extends "notifications/base_email.twig" %}
+{% block content %}
+{% set submission_stage_handle = ui.stageHandles[submission_stage] %}
+<h3>New <strong>{{ submission_stage_handle }}</strong> on {{ site_title }}: <br> <a href="{{ base_url }}/submission/{{ experiment_id }}">{{ submission_title }}</a></h3>
+
+{% include 'notifications/newsletter_preview.twig' with { preview: preview, base_url: base_url } %}
+
+{% endblock %}

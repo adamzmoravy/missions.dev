@@ -1,0 +1,21 @@
+.arrow-point {
+    text-align:rigth;margin-left:-39px;
+}
+.frontpage-subtext {
+    font-size:110%;
+}
+.pinned-event-container {
+    min-height:100%;
+}
+
+
+
+.grayscaleimage {
+    filter: grayscale(1) contrast(100%);
+    opacity:0.5;
+}
+
+.logo-landing {
+    margin-right:15px;
+    display:inline;
+}

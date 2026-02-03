@@ -1,0 +1,12 @@
+{
+    "platform": {
+        "access_control_rules": [{
+               "target": "submission-types::*",
+                "action": "read",
+                "roles": ["all"],
+                "permission": "allow",
+                "priority": 0
+            }
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+key: "sandbox"
+name: "Hugmyndaþorp"
+company_name: "Demo company Inc"
+VAT_id: "VAT: XXXXX"
+registration_id: "Kt: YYYYY-KKKK"
+languages:
+  EN: English
+  IS: Íslenska
+country_to_lang:
+  is: IS
+email_info: email@example.com
+email_noreply: no-reply@example.com
+google_analytics_id: "UA-xxxxxxxx-1"
+google_analytics_service_id: "ga:xxxxxxxxx"
+currency: USD
+custom_language: "yes"
+is_sandbox: "yes"
+experiments: "yes"
+aws_region: "eu-west-1"

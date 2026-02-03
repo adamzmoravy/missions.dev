@@ -1,0 +1,51 @@
+            <a href="{{ base_url }}/submission/{{ preview.experiment_id }}/" style="width:100%;display:inline-block;color:black;text-decoration: none;">
+                <div style="
+                    width:100%;
+                    border-radius:10px;
+                    margin-top:15px;
+                    background-color:white;
+                    padding:25px;
+                    position:relative;
+                    ">
+                    {% if preview.stage == 0 %} 
+                        <table width="100%" style="max-width:500px;margin-bottom:15px;">
+                            <tr>
+                                <td><img src="{{ base_url }}/img/badge-challenge_50.png" style="margin-left:-5px;width:25px;"> </td>
+                                <td style="text-align: right;"><h3 style="margin-top:0px;color:#f7bcb6;">Challenge</h3></td>
+                            </tr>
+                        </table>
+                    {% endif %}
+                    {% if preview.stage == 1 %} 
+
+                      <table width="100%" style="max-width:500px;margin-bottom:15px;">
+                            <tr>
+                                <td><img src="{{ base_url }}/img/badge-idea_50.png" style="margin-left:-5px;width:25px;"> </td>
+                                <td style="text-align: right;"><h3 style="margin-top:0px;color:#f8dd6c;">Idea</h3></td>
+                            </tr>
+                        </table>
+
+                        {% endif %}
+                        {% if preview.stage == 2 %} 
+                    
+
+                        <table width="100%" style="max-width:500px;margin-bottom:15px;">
+                            <tr>
+                                <td><img src="{{ base_url }}/img/badge-project_50.png" style="margin-left:-5px;width:25px;"> </td>
+                                <td style="text-align: right;"><h3 style="margin-top:0px;color:#73bf98;">Project</h3></td>
+                            </tr>
+                        </table>
+                
+                        {% endif %}
+        
+
+                    <h2 style="margin-top:5px;">{{ preview.title }}</h2>
+                    {% if preview.image != ""  %}
+                        <img src="https://d34m5sods6fnic.cloudfront.net/image/fetch/c_thumb,h_423,w_750,e_pixelate:0/{{ preview.image }}" width="100%" style="width:100%;">
+                    {% endif %}
+
+                    <p>{{ preview.short_description }}</p>
+                    {% for tag in preview.tags %}
+                        <span style="border-style:solid;border-width:1px;border-radius:16px;padding:7px;padding-left:10px;padding-right:10px;">{{ tag.label }}</span>
+                    {% endfor %}           
+                </div>
+            </a>

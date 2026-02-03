@@ -1,0 +1,297 @@
+{
+  "platform":  {
+    "ui": {
+      "frontPage": "welcome",
+      "shortcut_icon": "/img/checkbox-yellow.svg",
+      "showGuideForSection": [
+        "ideation",
+        "events",
+        "community"
+      ],
+      "terms": {
+        "terms_and_conditions": {
+          "name": "terms_and_conditions",
+          "label": "Terms and Conditions",
+          "url": "/en/policies/toc/"
+        },
+        "privacy_policy": {
+          "name": "privacy_policy",
+          "label": "Privacy Policy",
+          "url": "/en/policies/privacy/"
+        }
+      },
+      "profileElements": [
+        "submissions"
+      ],
+      "offerACLForSubmissionStages": [
+      ],
+      "submissionFeatures": [
+        "shares"
+      ],
+      "ideationTagTypes": [
+        {
+          "type": "degrees",
+          "label": "Degrees"
+        },
+        {
+          "type": "roles",
+          "label": "Roles"
+        },
+        {
+          "type": "interests",
+          "label": "Interests"
+        },
+        {
+          "type": "environments",
+          "label": "Environments"
+        },
+        {
+          "type": "offers",
+          "label": "Expertise, advice or services"
+        },
+        {
+          "type": "populations",
+          "label": "Populations working with"
+        },
+        {
+          "type": "languages",
+          "label": "Languages"
+        }
+      ],
+      "profileTagTypes": [
+        {
+          "type": "degrees",
+          "label": "Degrees"
+        },
+        {
+          "type": "roles",
+          "label": "Roles"
+        },
+        {
+          "type": "interests",
+          "label": "Interests"
+        },
+        {
+          "type": "environments",
+          "label": "Environments"
+        },
+        {
+          "type": "offers",
+          "label": "Expertise, advice or services"
+        },
+        {
+          "type": "populations",
+          "label": "Populations working with"
+        },
+        {
+          "type": "languages",
+          "label": "Languages"
+        }
+      ],
+      "missionImage": "/img/mission.svg",
+      "profileBackground": false,
+      "mainMenuHighlighter": true,
+      "theme": "missions",
+      "blur": false,
+      "stages": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "stagesIndexPages": {
+        "0": "ideation",
+        "1": "ideation",
+        "2": "ideation",
+        "3": "ideation",
+        "4": null,
+        "5": "issues",
+        "6": "guide",
+        "7": null,
+        "8": "organisations",
+        "9": "portfolio",
+        "10": "qa"
+      },
+      "ideationStages": [3, 0, 1, 2],      
+      "stageHandles": {
+        "0": "challenge",
+        "1": "idea",
+        "2": "project",
+        "3": "insight",
+        "4": "topic",
+        "5": "issue",
+        "6": "guide",
+        "7": "policy",
+        "8": "organisation",
+        "9": "portfolio_item",
+        "10": "question"
+      },
+      "hoverDelay": 650,
+      "hats": [
+        {
+          "color": "black",
+          "meaning": "Critical"
+        },
+        {
+          "color": "white",
+          "meaning": "Information"
+        },
+        {
+          "color": "red",
+          "meaning": "Feelings"
+        },
+        {
+          "color": "green",
+          "meaning": "New ideas"
+        },
+        {
+          "color": "blue",
+          "meaning": "Planning"
+        },
+        {
+          "color": "yellow",
+          "meaning": "Positive"
+        }
+      ],
+      "adminSections": [
+        "wizard",
+        "submissions",
+        "users",
+        "tags",
+        "groups",
+        "spaces",
+        "platform",
+        "translations",
+        "stats"
+      ],
+      "headerFeatures": [
+        "search",
+        "platform-identifier",
+        "navigation-bar",
+        "activity",
+        "profile",
+        "dropdown-menu"
+      ],
+      "submissions": {
+        "titleMaxLength": 50,
+        "shortDescriptionMaxLength": 700
+      },
+      "mainMenuShow": [
+          "feed",
+          "ideation",
+          "members"
+      ],
+      "mainMenu": [
+        {
+          "icon": "talk",
+          "link": "talk",
+          "name": "talk",
+          "page": "talk",
+          "label": "Talk"
+        },
+        {
+          "icon": "events",
+          "link": "events",
+          "name": "events",
+          "page": "events",
+          "label": "Events"
+        },
+        {
+          "icon": "home",
+          "link": "feed",
+          "name": "feed",
+          "page": "feed",
+          "label": "Home"
+        },
+        {
+          "icon": "bulp",
+          "link": "submissions",
+          "name": "ideation",
+          "page": "ideation",
+          "label": "Ideation"
+        },
+        {
+            "icon": "book",
+            "link": "book",
+            "name": "book",
+            "page": "book",
+            "label": "Book"
+        },
+        {
+            "icon": "join",
+            "link": "join",
+            "name": "join",
+            "page": "join",
+            "label": "Join"
+        },
+        {
+            "icon": "issues",
+            "link": "issues",
+            "name": "issues",
+            "page": "issues",
+            "label": "Issues"
+        },
+        {
+            "icon": "members",
+            "link": "members",
+            "name": "members",
+            "page": "members",
+            "label": "People"
+        },
+        {
+            "icon": "guide",
+            "link": "guide",
+            "name": "guide",
+            "page": "guide",
+            "label": "Guide"
+       },
+       {
+          "icon": "portfolio",
+          "link": "portfolio",
+          "name": "portfolio",
+          "page": "portfolio",
+          "label": "Portfolio"
+       },
+
+       {
+          "icon": "portfolio",
+          "link": "organisations",
+          "name": "organisations",
+          "page": "organisations",
+          "label": "Orgs"
+     }
+      ],
+      "offerHatsForSubmissionStages": [
+        0, 1, 2
+      ],
+      "onboarding": {
+        "haus": {
+          "steps": [
+              {
+                  "name": "profile_picture"
+              },
+              {
+                  "name": "profile_description"
+              },
+              {
+                "name": "getting_help"
+              },
+              {
+                  "name": "profile_skills"
+              },
+              {
+                  "name": "official_stuff"
+              }
+
+          ]
+        }
+      },
+      "showGuideForSection": [
+        "ideation",
+        "events",
+        "members"
+      ],
+      "showPlatformIntro": false,
+      "showPoweredBy": true,
+      "pinnedComponents": {
+        "feed": [
+        ]
+      }
+    }
+  }
+}

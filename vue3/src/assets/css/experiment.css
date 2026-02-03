@@ -1,0 +1,16 @@
+.comment-wrapper {
+    border-radius:3%;
+}
+
+.experiment-selection-title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
+    margin-bottom: 0px !important;
+    margin-left: 5px;
+}
+
+

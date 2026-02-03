@@ -1,0 +1,56 @@
+{
+    "platform":  {
+        "ui": {
+            "commentReactions": {
+                "love": {
+                    "icon": "/img/reactions/heart.png",
+                    "iconSelected": "/img/reactions/heart-white.png",
+                    "color": "#f46d75"
+                },
+                "funny": {
+                    "icon": "/img/reactions/laughing.png",
+                    "iconSelected": "/img/reactions/laughing-white.png",
+                    "color": "#ffbd2d"
+                },
+                "letsDoIt": {
+                    "icon": "/img/reactions/shovel.png",
+                    "iconSelected": "/img/reactions/shovel-white.png",
+                    "color": "#05c42c"
+                },
+                "solidarity": {
+                    "icon":  "/img/reactions/fist.png",
+                    "iconSelected":  "/img/reactions/fist-white.png",
+                    "color": "#567b89"
+                }
+            },
+            "submissionReactions": {
+                "like": {
+                    "icon": "/img/reactions/heart.png",
+                    "iconSelected": "/img/reactions/heart-white.png",
+                    "color": "#f46d75",
+                    "label": "I care about this"
+                },
+                "updates": {
+                    "icon": "/img/reactions/announcement.svg",
+                    "iconSelected": "/img/reactions/announcement-white.svg",
+                    "color": "#ffcc66",
+                    "label": "I'd like updates"
+                },
+                "help": {
+                    "icon": "/img/reactions/help.svg",
+                    "iconSelected": "/img/reactions/help-white.svg",
+                    "color": "#73BF98",
+                    "label": "I can help"
+                }
+            },
+            "genericReactions": {
+                "feedback": {
+                    "icon": "/img/reactions/comment.svg",
+                    "iconSelected": "/img/reactions/comment-white.svg",
+                    "color": "#9c9a9a",
+                    "label": "Feedback"
+                }
+            }
+        }
+    }
+}

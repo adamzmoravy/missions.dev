@@ -1,0 +1,49 @@
+<body style="background-color:#f0f2f5;">
+<div style="background-color:#f0f2f5;width:100%;height:100%;font-family:Arial;">
+    <div style="
+padding-bottom:100px;padding-top:50px;
+max-width:500px;
+     margin:auto;
+
+    ">
+        <div style="
+            border-radius:10px;
+            width:100%;
+            padding:25px;
+            background-color:white;">
+
+            <div style="width:95%;margin:auto;">
+
+                <h2>Hi {{first_name}}!</h2>
+                <h2>Below are recent submissions that you might find interesting.</h2>
+                <h2>Click on any of them to find out more, give feedback or take part.</h2>
+
+            </div>
+        </div>
+
+        {% for preview in previews %}
+            {% include 'notifications/newsletter_preview.twig' with { preview: preview, base_url: base_url } %}
+        {% endfor %}
+
+        <div style="
+            border-radius:10px;
+            width:100%;
+            margin-top:15px;
+            padding:25px;
+            background-color:white;">
+
+            <div style="width:95%;margin:auto;">
+
+                <p>You received this message because you have an account at <a href="{{ base_url }}">{{ site_title }}</a>. If you would rather not get notified of new submissions in that community, you can <a href="{{ base_url }}/api/experiments/unsubscribe/{{ unsubscribe_token }}">unsubscribe</a> to them.</p>
+
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+</body>

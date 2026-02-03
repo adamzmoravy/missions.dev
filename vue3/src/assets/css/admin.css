@@ -1,0 +1,73 @@
+
+#admin-top-row {
+    height: 10vh;
+}
+
+.admin-panel-buttons {
+    display: flex;
+    grid-gap: 1vw;
+}
+
+.admin-panel-button {
+    height: 5vh;
+    width: 30vh;
+    border: 0.2vh solid black;
+    background: #95C1E2;
+    border-radius: 1vh;
+    font-family: permanent-marker, sans-serif;
+}
+
+.admin-table-header {
+    background: none;
+    white-space: nowrap;
+    padding: 1vh;
+}
+
+.admin-table-header.active {
+    background: #F7BCB6;
+}
+
+
+.sortable:hover {
+    background: #fcc8c2;
+    cursor: pointer;
+}
+
+.admin-table-header.unsortable:hover {
+    background: #c6c6c6;
+}
+
+.team-emails {
+    border: none;
+    background: #f1f1f1;
+}
+
+
+.admin-panel-search {
+}
+
+.admin-search-img {
+    height: 2em;
+}
+
+
+.edited-tag {
+    background: #72e6ac !important;
+}
+
+.edited-tag:focus {
+    background: #ffffff;
+}
+
+.edit-tag-input.form-control {
+    border: none;
+    background: none;
+    color: #4c4c4c;
+    font-weight: 100;
+    width: 100%;
+}
+
+.add-related-prompt:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

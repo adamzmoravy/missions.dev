@@ -1,0 +1,9 @@
+<div style="font-size:1.3em;">
+    <p>Hi {{ recipient_name }}!</p>
+    <p>User {{name}} on {{ platform_name }} would like to get in contact with you. Their message is:</p>
+    <div style="padding:1em;background-color:#e9e9e9;display:inline-block;"><span style="font-size:1em;">{{message}}</span></div>
+    <p>If you would like to get in touch with them, you can send them an e-mail via:</p>
+        <div style="padding:10px;font-size:2em;"><a href="mailto:{{ sender_email }}">{{ sender_email }}</a></div>
+    <p>You can not reply to this message directly, you need to use the e-mail address above to get in touch with {{name}}.</p>
+    <p><strong>Please note, {{ platform_name }} does not verify the identity of it's users.</strong></p>
+</div>

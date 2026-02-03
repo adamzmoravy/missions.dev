@@ -1,0 +1,242 @@
+/********
+TILES !
+*********/
+
+
+#hexgrid {
+    margin:00px;
+}
+
+#hex-control {
+    z-index:9999999999;
+    position:fixed;
+    bottom:120px;
+    right:30px;
+    font-size:100%;
+
+}
+.size-select {
+
+}
+#hex-control a {
+    color: rgba(0, 0, 0, 0.43);
+    text-decoration:none;
+    cursor:pointer;
+    display:inline;
+}
+
+
+.hexgrid-page {
+    /*    background-image:url(/img/thingeyri-bg.jpg);
+    padding-top:100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    */
+}
+
+.village {
+    margin-top:-400px;
+    height:1000px;
+    margin-bottom:-150px;
+
+}
+
+
+.hex-tile-title {
+    font-family: soleil, sans-serif;
+    font-size:75px;
+    /*       font-weight: 600;*/
+    font-style: normal;
+}
+
+
+.mesh-container {
+    position:absolute;
+    top:0px;
+    padding-top:110px;
+    left:0px;
+    height:100%;
+    width:100%;
+    overflow:hidden;
+    outline:none;
+}
+
+.mesh-container-inner {
+    background-image:url(/img/hex-background-repeate-op25.png);
+    /* background-color:red;
+    */
+    position:relative;
+}
+
+
+.hex-tile {
+    background-repeat: no-repeat;
+    background-position: center;
+    position:absolute;
+    background-size: 100%;
+}
+
+.hex-tile-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:10;
+}
+
+.hex-tile .align-middle {
+    font-size: 25.5vw;
+}
+.hex-default {
+    background-image: url(/img/hex-default.png);
+    background-size: 95%;
+    border-style:solid;
+    border-width:1px;
+}
+
+.hex-mission {
+    background-color: rgb(76, 76, 76);
+    z-index:99999;
+    border-radius: 50%;
+    color:white;
+}
+
+.controls {
+    position:fixed;
+    width:200px;
+    bottom:15px;
+    left:20px;
+}
+.edit-toggle {
+    color:white;
+    font-size:120%;
+}
+.edit-checkbox {
+    height:20px;
+    position:relative;
+    top:-2px;
+    margin-right:10px;
+    margin-left:10px;
+}
+.select-board-menu {
+    color:white;
+}
+.tile-image {
+
+}
+.tile-image-add {
+    opacity:0;
+}
+.fade-enter-active {
+    transition: opacity 1s;
+}
+.fade-leave-active {
+    opacity:0;
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+.front {
+    z-index:10;
+}
+.tile-unused {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tile-debug-panel {
+    position:fixed;
+    width:400px;
+    min-height:400px;
+    background-color:lightblue;
+    right:0px;
+    top:200px;
+}
+
+.cursor-menu {
+    padding-top:5px;
+    padding-left:20px;
+    background:url('/img/cursor-menu-thinner-shadow.png') no-repeat;
+    background-size: 100px;
+    width:100px;
+    height:260px;
+    z-index:2000;
+    position:absolute;
+    left:20px;
+    top:200px;
+
+}
+
+.tile-add {
+    width:20%;
+}
+
+.tile-remove {
+    font-weight:100;
+    z-index:9999999999999999;
+    position:absolute;
+    bottom:15px;
+    width:100%;
+    text-align:center;
+    font-size:10px;
+}
+.tile-move {
+    font-weight:100;
+    z-index:9999999999999999;
+    position:absolute;
+    top:15px;
+    width:100%;
+    text-align:center;
+    font-size:10px;
+}
+.tile-move-mission {
+    color:yellow!important;
+}
+.tile-remove-mission {
+    color:yellow!important;
+}
+
+.experiment-select-panel {
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.experiment-select-container {
+    height:380px;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+div{
+    transition: 0s background-color;
+}
+
+
+.tile-title {
+    text-align:center;
+    width:65%;
+    cursor:pointer;
+}
+
+.hex-tile-inner a {
+    font-weight:100;
+}
+
+.hex-tile-inner a:hover {
+    text-decoration:none;
+}
+
+.hex-mission {
+    background-color: rgb(76, 76, 76);
+    z-index:999999997;
+    border-radius: 50%;
+    width:320px;
+    height:320px;
+    color:white;
+    margin-left:-58px;
+    margin-top:-75px;
+    position:relative;
+}
