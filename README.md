@@ -1,7 +1,7 @@
 Missions.dev
 ========
 
-[Missions.dev](https://www.missions.dev/) (Hugmyndaþorp) is a platform for co-creation created by East of Moon (Austan mána ehf) 
+[Missions.dev](https://www.missions.dev/) (Hugmyndaþorp) is a platform for co-creation created by [East of Moon]([https://www.missions.dev/](https://www.eastofmoon.com/))  (Austan mána ehf) 
 
 ## Installation
 
