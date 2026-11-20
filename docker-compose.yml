@@ -1,0 +1,62 @@
+# Local development stack for Missions.dev - works with OrbStack (or any Docker engine).
+#   make up        -> start everything, then open http://localhost:5173
+# See docs/local-development.md for details.
+name: missions-dev
+
+services:
+  db:
+    image: mysql:8.0
+    command:
+      # The codebase predates strict mode (backend/README.md tells you to disable it).
+      - --sql-mode=NO_ENGINE_SUBSTITUTION
+      - --default-authentication-plugin=mysql_native_password
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: idea-village-sandbox
+      MYSQL_USER: missions
+      MYSQL_PASSWORD: missions
+    volumes:
+      - db-data:/var/lib/mysql
+      - ./backend/src/Database/schema.sql:/docker-entrypoint-initdb.d/10-schema.sql:ro
+      - ./docker/mysql/20-environments.sql:/docker-entrypoint-initdb.d/20-environments.sql:ro
+      - ./docker/mysql/30-seed.sql:/docker-entrypoint-initdb.d/30-seed.sql:ro
+    ports:
+      - "3307:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-uroot", "-proot"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+  app:
+    build: ./docker/php
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./:/var/www/html
+      - composer-cache:/root/.cache/composer
+    ports:
+      - "8080:80"   # API at /api, built frontend (make build) at /
+
+  frontend:
+    image: node:22-bookworm-slim
+    working_dir: /app/frontend
+    command: sh -c "npm ci --no-audit --no-fund && npx vite --host 0.0.0.0 --port 5173 --strictPort"
+    environment:
+      VITE_API_URL: /api                 # main.js uses this in development mode
+      API_PROXY_TARGET: http://app:80    # vite.config.js proxies /api -> PHP container
+    depends_on:
+      - app
+    volumes:
+      - ./:/app
+      - frontend-node-modules:/app/frontend/node_modules
+    ports:
+      - "5173:5173"
+
+volumes:
+  db-data:
+  composer-cache:
+  frontend-node-modules:

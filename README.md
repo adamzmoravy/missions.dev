@@ -5,7 +5,13 @@ Missions.dev
 
 ## Installation
 
-This codebase is still missing guides and installation instructions, and tests need to be reworked.
+Tests still need to be reworked.
+
+**Run it locally (OrbStack / Docker):** `make up`, then open http://localhost:5173. See [docs/local-development.md](docs/local-development.md).
+
+## Documentation
+
+Architecture, API reference, domain model and known issues are in [docs/](docs/README.md).
   
 ## Structure
  
