@@ -21,6 +21,9 @@ $_SERVER['REMOTE_ADDR'] = '127.0.0.1';
 $_SERVER['SERVER_NAME'] = 'localhost';
 $_SERVER['HTTP_HOST'] = 'localhost';
 
+// Repository code expects the profiling helper that silex/bootstrapme.php normally creates.
+$GLOBALS['timings'] = new \Karolina\Timings();
+
 $dotenv = new Dotenv\Dotenv($root, 'config.env');
 $dotenv->load();
 

@@ -9,7 +9,7 @@ of this public document; report those privately as described in `SECURITY.md`.
 |---|---|
 | Runtime | PHP 7.4 (EOL since Nov 2022). The Debian 11 base of the official `php:7.4` images is archived too. |
 | Framework | Silex 1.3 (EOL 2018), Pimple 1, Symfony 3 components, Twig 1, Eloquent 5.x standalone, all EOL |
-| Dependency install | Fails out of the box. There is no `composer.lock` (`*.lock` is gitignored). The `composer.json` `name` was invalid (fixed in this branch). Current Composer refuses most pinned versions because they carry published security advisories. |
+| Dependency install | Fails out of the box. There is no `composer.lock` (`*.lock` is gitignored). The `composer.json` `name` was invalid (fixed in this branch). Current Composer refuses most pinned versions because they carry published security advisories. Installing anyway gives 41 advisories across 11 packages. |
 | Tests | None. `backend/silex/AppTests.php` is broken, and the frontend has no tests, lint or type checks. |
 | Install docs | Only `backend/README.md` (outdated: it describes a `platform_config` file selection the code no longer does, and names the wrong `AWS_ACCESS_KEY` variable) |
 | Seed data | None. A fresh DB needs a `kf_platforms` row and the separate `environments` schema before the API will boot (both are handled by this branch's Docker setup). |
@@ -25,6 +25,7 @@ of this public document; report those privately as described in `SECURITY.md`.
 - `PUT /experiments/spaces/` is broken.
 - `Notification::setToUserIds()` resolves recipients by `kf_profiles.id` instead of `user_id` (`UserRepository.php:44-46`). It is only correct while the two ids coincide.
 - The worker never sets `kf_email_queue.finished_sending_at`.
+- **Realtime made writes fail.** `PushToFront` and `PushToFrontEndSubscription` called Pusher unconditionally. With no or invalid Pusher credentials, every save that fires a realtime event (submission updates, comments, users) returned a 500 *after* the data was written. This branch now skips the push when no key is configured.
 - `GET /platform/config/` is defined twice (`Routes.php:505` and `:561`).
 - The error handler only catches `\Exception`, so PHP `Error`s (TypeErrors from `false` passed as a `User`) become non-JSON 500s. Many routes rely on this to "reject" anonymous callers.
 - There are no DB transactions anywhere. Multi-step saves (team, language fields, network, document) are not atomic.
