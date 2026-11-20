@@ -19,6 +19,12 @@ Class PushToFrontEndSubscription implements Subscriber {
 
     public function handle ($event) {
 
+        // Realtime is optional: without Pusher credentials (e.g. local development) skip the push
+        // instead of failing the whole request after the data has already been saved.
+        if (empty($this->pusherData['pusher_api_key'])) {
+            return;
+        }
+
         $options = array(
             'cluster' => 'eu',
             'useTLS' => true
